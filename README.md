@@ -22,4 +22,12 @@ Team worker
 Resource investigator
 Completer/Finisher
 
+Where going to cycle through interations twice to determine the characters first round will devide the follwoing three categories:
+
+Social Orientated
+Thought Orientated
+Results Orientated
+
+After the first cycle of interations the second round for each category determine and fine tune the category type.
+
 
