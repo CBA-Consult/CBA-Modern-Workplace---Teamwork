@@ -1,0 +1,54 @@
+# Download the latest Build from Azure Dev Ops. This action takes arguments related to Azure DevOps build pipeline and downloads the artifact of latest successful build under GITHUB_WORKSPACE, which can be used in the subsequent github workflow step.
+
+# This would be very useful in case of uploading Azure Sec Pack related files to Azure VMs at the time of deployment. 
+
+# Example Usage in the github workflow
+# name: Github Workflow
+
+# on: [push]
+
+# jobs:
+#  ...
+
+#  # deploy new database schema using dacpac
+#  build:
+#      runs-on: ubuntu-latest
+#      steps:
+#      # checkout
+#      - uses: actions/checkout@v1
+#      # download artifact from azure dev ops
+#      - name: download artifacts from azure dev ops build pipeline
+#        uses: manishsat/ado-download-artifact@v1
+#        with:
+#          buildDefinitionId: ${{ secrets.buildDefinitionId }}
+#          pattoken: ${{ secrets.pattoken }}
+#          artifactName: ${{ secrets.artifactName }}
+#          orgName: ${{ secrets.orgName }}
+#          projectId:  ${{ secrets.projectId }}
+
+# Below is sample output while using in github workflow.
+
+# Run manishsat/ado-download-artifact@v1
+
+
+# Artifact download at  /home/runner/work/test-action/test-action/***
+# Artifact zip file will be available under $GITHUB_WORKSPACE/{artifactName}
+
+on:
+  push:
+    branches: 
+      - master
+
+#- name: Download Artifact from Azure Dev Ops
+  uses: manishsat/ado-download-artifact@v3
+  with:
+    # Build Definit1ion Id for which the artifact is going to be downloaded
+    buildDefinitionId: # optional
+    # PAT token to access build and build artifacts
+    pattoken: # optional
+    # Name of the artifact ML Model Update and Character Update 
+    artifactName: # optional
+    # Azure DevOps organization name "CBA Consult" / `cbaconsult´
+    orgName: 07c216ae-cfae-4b66-9e83-cbbbdce61b38
+    # Azure Dev Ops projectId for which the build and artifacts belongs to "MyTeamProject"
+    projectId: 54c1a273-77cf-4584-95b9-a19d0b51f600
