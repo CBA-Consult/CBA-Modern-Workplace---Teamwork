@@ -40,6 +40,6 @@ Entity Recognition
 
 The model which will be continiusly trained will categorize defined Entities to a Belbin Role. This works similar to Sentiment Analysis but is specific to either Social Orientated, Thought Orientated or Results Oreintated.
 
-The model is trained in English Language but as with the PANAS Scales in project Emtion Classifications the results from the initial tests showed language independance, cultural indenpedance outcomes which is promosing when the model could be translated by regular language translators and maintain the similar outcomes.
+The model is trained in English Language but as with the PANAS Scales in project Emotion Classifications the results from the initial tests showed language independance, cultural indenpedance outcomes which is promosing when the model could be translated by regular language translators and maintain the similar outcomes.
 
 
