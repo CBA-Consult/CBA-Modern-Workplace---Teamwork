@@ -1,5 +1,5 @@
 # CBA-Modern-Workplace-Teamwork
-Modern Workplace and modern collaboration and teamwork. CBA Modern Workplace and Teamwork has a value proposition aimed at adding value to Teams by integrating the Belbin Role Classification.
+Modern Workplace and modern collaboration and teamwork. CBA Modern Workplace and Teamwork has a value proposition aimed at adding value to Teams by integrating the Belbin Role Classification - Mainly to be used as Ice Breaker when project teams are shaped and teams are created. 
 
 With CBA Consult Moderrn Workplace and Teams collabortion in Microsoft Teams have started working a the classic Belbin roles for user classification and assign one of the Belbin Roles based on the user account text classifications.
 
